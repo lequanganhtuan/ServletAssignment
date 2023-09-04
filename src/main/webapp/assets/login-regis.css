@@ -1,123 +1,89 @@
-/* ---login--- */
-* {
-    font-family: "Poppins";
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
 }
 
-body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #dde5f4;
-    height: 100vh;
+.container{
+    height: 100%;
+    align-content: center;
 }
 
-.login__title {
-    margin-bottom: 10px;
-    text-align: center;
+.card{
+    height: 420px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
 }
 
-.screen-1 {
-    background: #f1f7fe;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    box-shadow: 0 0 2em #e6e9f9;
-    gap: 2em;
-}
-.screen-1 .logo {
-    margin-top: -3em;
-}
-.screen-1 .email {
-
-    margin-top: 20px;
-    background: white;
-    box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: #4d4d4d;
-    margin-top: -3em;
-}
-.screen-1 .email input {
-    outline: none;
-    border: none;
-}
-.screen-1 .email input::-moz-placeholder {
-    color: black;
-    font-size: 0.9em;
-}
-.screen-1 .email input:-ms-input-placeholder {
-    color: black;
-    font-size: 0.9em;
-}
-.screen-1 .email input::placeholder {
-    color: black;
-    font-size: 0.9em;
-}
-.screen-1 .email ion-icon {
-    color: #4d4d4d;
-    margin-bottom: -0.2em;
-
+.social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
 }
 
-.screen-1 .repassword,
-.screen-1 .password {
-    background: white;
-    box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: #4d4d4d;
-}
-
-.screen-1 .repassword input,
-.screen-1 .password input {
-    width: 200px;
-    outline: none;
-    border: none;
-}
-
-.screen-1 .password input::placeholder {
-    font-size: 0.9em;
-}
-.screen-1 .password ion-icon {
-    color: #4d4d4d;
-    margin-bottom: -0.2em;
-}
-.screen-1 .password .show-hide {
-    margin-right: -5em;
-}
-.screen-1 .login {
-    padding: 1em;
-    background: #3e4684;
+.social_icon span:hover{
     color: white;
-    border: none;
-    border-radius: 30px;
-    font-weight: 600;
-}
-.screen-1 .footer {
-    display: flex;
-    font-size: 0.7em;
-    color: #5e5e5e;
-    gap: 14em;
-    padding-bottom: 10em;
-}
-.screen-1 .footer span {
     cursor: pointer;
 }
 
+.card-header h3{
+    color: white;
+}
 
+.social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
 
-button {
-    cursor: pointer;
+.input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+    color: white;
+}
+
+.remember input
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.links{
+    color: white;
+}
+
+.links a{
+    margin-left: 4px;
 }
