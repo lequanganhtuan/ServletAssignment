@@ -1,0 +1,150 @@
+
+/* ---header--- */
+.header {
+    background-color: #f6f8fc;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header__container{
+    width: 100%;
+    height: 64px;
+    padding: 8px;
+    justify-content: space-between;
+}
+.header__container--logo{
+    display: flex;
+    min-width: 240px;
+}
+
+.header__container-menulogo {
+    margin: 0 4px;
+    padding: 12px;
+}
+
+.header__container-menulogo i {
+    font-size: 24px;
+    color: #444746 ;
+}
+
+.header__container--title {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    margin-left: 18px;
+    margin-right: auto;
+}
+
+.header__container--profile{
+    margin:  6px;
+    padding: 14px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.profile--icon i {
+    color: #fff;
+}
+
+.header__searchbar--btn {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+.header__searchbar--btn:hover {
+    background-color:#dde3ec;
+    border-radius: 50%;
+}
+
+.header__container--searchbar{
+    width: 720px;
+    height: 100%;
+    background-color: #eaf1fb;
+    border-radius: 25px;
+    margin-right: auto;
+    display: flex;
+}
+
+.header__searchbar--btn i {
+    color: #444746;
+}
+
+.header__searchbar--input {
+    width: 100%;
+    margin-right: 6px;
+    margin-top: 6px;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.header__searchbar--input_field {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:#eaf1fb ;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+/* ----Start container--- */
+
+
+.container__sidebar a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.container__sidebar {
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+    margin-top: 64px;
+}
+
+section {
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    color: #000;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+section:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards .5s;
+}
+
+@keyframes fadeIn {
+    100% { opacity:1 }
+}
